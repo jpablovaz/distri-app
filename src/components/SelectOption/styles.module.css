@@ -1,0 +1,109 @@
+.borderContainer {
+	border: solid 1px rgb(110, 110, 110, 0);
+	border-top: solid 1px rgb(110, 110, 110, 0.3);
+}
+
+.borderContainer:hover,
+.borderContainer:focus-within {
+	border: solid 1px rgb(110, 110, 110, 0.4);
+}
+
+/*the container must be positioned relative:*/
+.select {
+	position: relative;
+	width: 150px;
+	width: 100%;
+	/* margin: 10px; */
+	height: 30px;
+	margin: 1rem;
+	margin-top: calc(17px + 1rem);
+}
+
+.select select {
+	display: none; /*hide original SELECT element:*/
+}
+
+.selected {
+	/* background-color: var(--blue);     */
+	/* background-color: var(--black-200);     */
+	background: transparent;
+}
+
+/*style the arrow inside the select element:*/
+.selected:after {
+	position: absolute;
+	content: '';
+	top: 12px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.selected.arrowActive:after {
+	border-color: transparent transparent var(--white-100) transparent;
+	top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.items div,
+.selected {
+	color: var(--white-100);
+	padding: 3.7px 16px;
+	border: none;
+	border-bottom: 2px solid transparent;
+	border-color: transparent transparent var(--blue) transparent;
+	cursor: pointer;
+	user-select: none;
+	white-space: nowrap;
+	padding-right: 30px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.items div {
+	padding: 8px 16px;
+}
+
+div,
+.gray {
+	color: var(--white-200);
+}
+
+/*style items (options):*/
+.items {
+	position: absolute;
+	background-color: var(--blue);
+	top: 100%;
+	left: 0;
+	right: 0;
+	max-height: 350px;
+	overflow-y: auto;
+	z-index: 9999;
+}
+
+/*hide the items when the select box is closed:*/
+.hide {
+	display: none;
+}
+
+.items div:hover,
+.sameAsSelected {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.select span {
+	position: absolute;
+	top: -14px;
+	left: 1rem;
+	color: var(--white-300);
+	font-size: 0.9rem;
+	font-family: Roboto-Regular;
+	transition: 0.1s all ease-in;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.rightPadding {
+	padding-right: 2rem;
+}

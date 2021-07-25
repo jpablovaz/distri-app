@@ -1,0 +1,29 @@
+.filter {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-arroud;
+	height: 200px;
+	height: auto;
+	width: 95%;
+	background: var(--black-alfa-100);
+	margin-top: 0px;
+	padding: 1rem 1rem 1rem 1rem;
+	/* padding: 0; */
+	border: 2px solid var(--black-400);
+}
+.title {
+	width: 95%;
+	background: var(--black-200);
+	margin-top: 1vh;
+	padding: 1rem;
+	text-align: center;
+	color: var(--white-100);
+	letter-spacing: 0.2em;
+	font-family: Roboto-Regular;
+	border: 2px solid var(--black-400);
+	border-bottom: 0px;
+}
+

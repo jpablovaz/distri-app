@@ -1,0 +1,85 @@
+/*================================================== 
+                      VARIABLES
+  ==================================================*/
+
+:root {
+	--blue: #20639b;
+	--dark-blue: #173f5fd3;
+	--green: #3caea3;
+	--red: #ed553b;
+	--yellow: #f6d55c;
+	--white-300: #9a9a9a;
+	--white-200: #bababa;
+	--white-100: #fafafa;
+	--black-400: #353535;
+	--black-300: #292929;
+	--black-200: #1e1e1e;
+	--black-100: #121212;
+
+	--black-alfa-100: rgb(20, 20, 20, 0.8);
+	--black-alfa-200: rgb(39, 39, 39, 0.8);
+	--blue-alfa-100: rgb(2, 46, 82, 0.9);
+
+	--main-img: url('assets/images/18.jpg') center center no-repeat;
+	--border: 2px solid var(--black-300);
+	--aside-width: 17%;
+}
+
+/*================================================== 
+                   GLOBAL SETTING
+  ==================================================*/
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+	font-family: inherit;
+	color: inherit;
+}
+*:focus {
+	outline: none;
+}
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+::-webkit-scrollbar-track {
+	background: rgb(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--white-300);
+	border: 2px solid rgb(0, 0, 0, 0.7);
+}
+html {
+	font-size: 17px;
+}
+body {
+	box-sizing: border-box;
+	color: var(--white-100);
+	font-family: Roboto-Regular;
+	letter-spacing: 0.04em;
+	background: var(--black-400);
+}
+
+/*================================================== 
+                        FONTS
+  ==================================================*/
+
+@font-face {
+	font-family: Roboto-Thin;
+	src: url(assets/fonts/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+	font-family: Roboto-Light;
+	src: url(assets/fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+	font-family: Roboto-Medium;
+	src: url(assets/fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+	font-family: Roboto-Regular;
+	src: url(assets/fonts/Roboto/Roboto-Regular.ttf);
+}

@@ -1,0 +1,34 @@
+/*================================================== 
+                       SCROLL
+  ==================================================*/
+
+.menu::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+.menu::-webkit-scrollbar:hover {
+	width: 12px;
+	height: 12px;
+}
+.menu::-webkit-scrollbar-track {
+	background: rgb(0, 0, 0, 0.1);
+}
+.menu::-webkit-scrollbar-thumb {
+	background: #333;
+	border: 2px solid var(--white-300);
+}
+.menu::-webkit-scrollbar-track {
+}
+
+/*================================================== 
+                        MENU
+  ==================================================*/
+
+.menu {
+	position: fixed;
+	top: 220px;
+	bottom: 20px;
+	left: 0;
+	width: var(--aside-width);
+	overflow-y: scroll;
+}

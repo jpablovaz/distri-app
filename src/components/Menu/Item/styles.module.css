@@ -1,0 +1,97 @@
+/*================================================== 
+                       ITEM
+  ==================================================*/
+
+.item {
+	position: relative;
+	padding: 15px 20px;
+	cursor: pointer;
+	transition: 0.5s all ease-in-out;
+	color: var(--menu-item-cl);
+	background: var(--menu-item-bg);
+}
+.item:hover,
+.item.selected {
+	position: relative;
+	color: var(--white-100);
+	background: var(--black-300);
+}
+.item.selected::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 2px;
+	width: 4px;
+	content: '';
+	background: var(--blue);
+}
+
+/*================================================== 
+                      SUB-ITEM
+  ==================================================*/
+
+.subItems {
+	max-height: 0;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.4s all ease-in-out;
+}
+.subItems .item {
+	padding-left: 35px;
+}
+.subItems .item::before {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 16px;
+	width: 1px;
+	content: '';
+	background: var(--black-400);
+}
+.visible {
+	max-height: 294px;
+	opacity: 1;
+	pointer-events: auto;
+	border-bottom: solid 2px var(--black-400);
+	border-top: solid 1px var(--black-400);
+}
+.visible .item {
+	padding: 15px 20px;
+	padding-left: 35px;
+}
+
+/*================================================== 
+                     ARROW ICON
+  ==================================================*/
+
+.arrowContainer {
+	width: 35px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+	padding-left: 4px;
+}
+.arrowContainer:hover {
+	background: var(--blue);
+	opacity: 0.9;
+}
+.svgUp,
+.svgDown {
+	transition: 0.5s all ease;
+	height: 0.9rem;
+}
+.svgUp {
+	margin-top: 18px;
+	margin-left: 8px;
+}
+.svgDown {
+	transform: scale(1, -1);
+	margin-top: 16px;
+	margin-left: 8px;
+}
+.item:hover .svgDown,
+.item:hover .svgUp {
+	fill: var(--white-100);
+}

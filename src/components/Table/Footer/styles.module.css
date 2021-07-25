@@ -1,0 +1,84 @@
+.footer {
+	margin-top: 5px;
+	width: 95%;
+	height: 50px;
+	background: var(--black-100);
+	margin-bottom: -10px;
+	border: solid #333 0px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+	border: 2px solid var(--black-300);
+}
+.svgFooter {
+	display: block;
+	height: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer > div {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.previous {
+	transform: scale(-1, 1);
+}
+.footer .button {
+	padding: 15px 20px 10px 20px;
+	cursor: pointer;
+}
+.footer .button:hover {
+	background: var(--black-alfa-200);
+}
+.footer .button:hover svg {
+	fill: var(--green);
+}
+.footer span {
+	padding: 0 8px;
+	font-size: 1.2rem;
+}
+.footer .counter {
+	width: 200px;
+	left: calc(50% - 100px);
+	position: absolute;
+	margin-bottom: 2px;
+}
+.amountControlContainer {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 50px;
+	width: 50px;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
+}
+.amountControlContainer .button {
+	position: relative;
+	height: 20px;
+	width: 35px;
+	padding: 0px;
+	margin: 0;
+	border: 0px solid var(--black-300);
+}
+.pagesInfo {
+	display: flex;
+	align-items: center;
+	border: 1px solid var(--black-300);
+	margin-right: 20px;
+	height: 46px;
+	padding: 0 20px;
+	background: var(--dark-blue);
+}
+.svgCounter {
+	height: 16px;
+	margin-top: 5px;
+}
+.down {
+	transform: scale(1, -1);
+	margin-top: 0px;
+}

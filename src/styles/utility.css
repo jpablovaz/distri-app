@@ -1,0 +1,56 @@
+/*================================================== 
+                     VISIBILITY
+  ==================================================*/
+
+.opacity-0 {
+	opacity: 0;
+}
+.opacity-1 {
+	opacity: 1;
+}
+.display-none {
+	display: none;
+}
+.display-inline {
+	display: inline;
+}
+.display-block {
+	display: block;
+}
+.visibility-visible {
+	visibility: visible;
+}
+.visibility-hidden {
+	visibility: hidden;
+}
+
+/*================================================== 
+                       ALIGN
+  ==================================================*/
+
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+.left {
+	text-align: left;
+}
+
+/*================================================== 
+                     COLUMNS SIZE
+  ==================================================*/
+
+.col-small {
+	min-width: 100px;
+	max-width: 100%;
+}
+.col-medium {
+	min-width: 150px;
+	max-width: 100%;
+}
+.col-large {
+	min-width: 300px;
+	max-width: 100%;
+}

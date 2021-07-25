@@ -1,0 +1,43 @@
+/*================================================== 
+                        MAIN
+  ==================================================*/
+
+main {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: var(--aside-width);
+	top: 0;
+	padding: 0;
+	vertical-align: middle;
+	max-width: 100%;
+	max-height: 100%;
+}
+main:after {
+	z-index: -1;
+	content: '';
+	position: absolute;
+	top: -10px;
+	bottom: -10px;
+	left: 0;
+	right: -10px;
+	background: var(--main-img);
+	pointer-events: none;
+	filter: brightness(90%) blur(3px);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/*================================================== 
+                       ASIDE
+  ==================================================*/
+
+aside {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: var(--aside-width);
+	background: var(--black-100);
+}

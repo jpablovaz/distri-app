@@ -1,0 +1,42 @@
+.borderContainer {
+	border: solid 1px rgb(110, 110, 110, 0);
+	border-top: solid 1px rgb(110, 110, 110, 0.3);
+}
+
+.borderContainer:hover,
+.borderContainer:focus-within {
+	border: solid 1px rgb(110, 110, 110, 0.4);
+}
+
+.container {
+	position: relative;
+	margin: 1rem;
+}
+.container input[type='text'] {
+	border: none;
+	border-bottom: 2px solid var(--blue);
+	background: transparent;
+	text-decoration: none;
+	outline: none;
+	color: var(--white-100);
+	margin-top: 20px;
+	padding: 3px 1rem;
+	font-size: 1rem;
+	width: 100%;
+}
+
+.container span {
+	position: absolute;
+	top: 23px;
+	color: var(--white-200);
+	font-size: 1rem;
+	left: 11px;
+	transition: 0.3s all ease;
+}
+.container .spanTop {
+	position: absolute;
+	top: 3px;
+	left: 14px;
+	color: var(--white-300);
+	font-size: 0.9rem;
+}
