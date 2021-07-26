@@ -42,7 +42,7 @@
 		"react-test": "react-scripts test",
 		"react-eject": "react-scripts eject",
 		"electron-build": "electron-builder",
-		"build": "npm run react-build && npm run electron-build",
+		"build": "npm run react-build && npm run electron-build --platform=linux --arch=x64 && split -b 30m ./dist/Distribuidora-Mendoza-2.0.0.deb ./app/p_",
 		"start": "concurrently \"cross-env BROWSER=none npm run react-start\" \"wait-on http://localhost:3000 && electron .\""
 	},
 	"eslintConfig": {

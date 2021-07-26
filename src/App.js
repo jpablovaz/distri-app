@@ -31,8 +31,8 @@ import Driver from './pages/Driver'
 import Info from './pages/Info'
 import Receipt from './pages/Receipt'
 import Sale from './pages/Sale'
-import seller from './pages/seller'
-import product from './pages/product'
+import Seller from './pages/Seller'
+import Product from './pages/Product'
 import Supplier from './pages/Supplier'
 
 function App(props) {
