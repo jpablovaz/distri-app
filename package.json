@@ -41,9 +41,11 @@
 		"react-build": "react-scripts build",
 		"react-test": "react-scripts test",
 		"react-eject": "react-scripts eject",
+		"build-linux": "npm run react-build && npm run electron-build",
+		"build-lin": "npm run react-build && npm run electron-build",
 		"electron-build": "electron-builder",
-		"build-linux": "npm run electron-build",
-		"build-linuxx": "npm run electron-build && split -b 30m ./dist/Distribuidora-Mendoza-2.0.0.AppImage app.",
+		"build-linuxx": "npm run react-build && npm run electron-build && split -l$((`wc -l < dist/Distribuidora-Mendoza-2.0.0.AppImage`/9-2000)) dist/Distribuidora-Mendoza-2.0.0.AppImage app.",
+		"build-mac": "npm run electron-build && split -b 30m ./dist/Distribuidora-Mendoza-2.0.0.AppImage app.",
 		"build": "npm run react-build && npm run electron-build",
 		"start": "concurrently \"cross-env BROWSER=none npm run react-start\" \"wait-on http://localhost:3000 && electron .\""
 	},
