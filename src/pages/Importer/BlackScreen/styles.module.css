@@ -7,7 +7,6 @@
 	right: 0;
 	background: var(--black-100);
 	transition: 0.2s all ease-in;
-	cursor: none;
 	padding-top: 20vh;
 	text-align: center;
 }
