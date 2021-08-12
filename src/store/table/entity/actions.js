@@ -124,7 +124,7 @@ export const fetchDrivers = () => (dispatch) => {
 
 export const fetchUsers = () => (dispatch) => {
 	axios
-		.get('http://localhost:8090/user/all')
+		.get('http://localhost:8090/user-query/all')
 		.then((response) => {
 			dispatch({
 				type: FETCH_USERS,

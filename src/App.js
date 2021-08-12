@@ -43,10 +43,23 @@ function App(props) {
 	props.onFetchDrivers()
 	props.onFetchProducts()
 	props.onFetchSellers()
-	props.onFetchSuppliers()
 	props.onFetchUsers()
+	props.onFetchSuppliers()
 	props.onFetchLists()
 
+	setInterval(() => {
+		props.onFetchBanks()
+		props.onFetchBrands()
+		props.onFetchClassifications()
+		props.onFetchCustomers()
+		props.onFetchDrivers()
+		props.onFetchProducts()
+		props.onFetchSellers()
+		props.onFetchUsers()
+		props.onFetchSuppliers()
+		props.onFetchLists()
+		console.log('refresh entities')
+	}, 20000)
 	return (
 		<Router>
 			<div className="App">
